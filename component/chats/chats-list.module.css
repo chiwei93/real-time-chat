@@ -1,0 +1,69 @@
+.list {
+  list-style: none;
+  margin-top: 3em;
+}
+
+.list h4 {
+  margin-bottom: 1.5em;
+  font-size: 1.5rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1rem;
+}
+
+.item:not(:last-child) {
+  margin-bottom: 2em;
+}
+
+.btnContainer {
+  display: flex;
+  align-items: center;
+}
+
+.btnDelete,
+.btnJoin {
+  all: unset;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding: 0.5em 1.5em;
+  border-radius: 0.5em;
+  transition: color 0.3s, background-color 0.3s;
+  box-shadow: 0.1em 0.1em 0.5em var(--color-shadow);
+}
+
+.btnDelete {
+  margin-right: 1em;
+  background-color: rgb(255, 167, 135);
+  color: var(--color-white);
+}
+
+.btnJoin {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+.btnDelete:active,
+.btnDelete:hover {
+  background-color: var(--color-error);
+}
+
+.btnJoin:active,
+.btnJoin:hover {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+@media only screen and (min-width: 1024px) {
+  .list h4 {
+    font-size: 2rem;
+  }
+
+  .item {
+    font-size: 1.1rem;
+  }
+}

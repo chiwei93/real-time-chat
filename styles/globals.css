@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--color-background);
+}
+
+:root {
+  --color-background: #e8fefa;
+  --color-primary: #bcf5d8;
+  --color-secondary: #0e8d62;
+  --color-black: black;
+  --color-white: white;
+  --color-shadow: rgba(0, 0, 0, 0.1);
+  --color-error: orangered;
+  --color-gray: #96b1ac;
+  --box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.05);
+}
+
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

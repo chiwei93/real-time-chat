@@ -1,0 +1,24 @@
+.btn {
+  all: unset;
+  font-size: 0.875rem;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+  box-shadow: 0.1em 0.1em 0.5em var(--color-shadow);
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn:hover,
+.btn:active {
+  background-color: var(--color-secondary);
+  color: var(--color-background);
+}
+
+@media only screen and (min-width: 1024px) {
+  .btn {
+    font-size: 1rem;
+    padding: 0.5em 1.5em;
+  }
+}

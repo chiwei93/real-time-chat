@@ -1,0 +1,149 @@
+.form {
+  margin: 6em 0 3em;
+  background-color: var(--color-white);
+  padding: 3em 2em;
+  border-radius: 1em;
+  box-shadow: var(--box-shadow);
+}
+
+.form h2 {
+  text-align: center;
+  margin-bottom: 0.5em;
+  font-size: 2rem;
+  color: var(--color-secondary);
+}
+
+.heading {
+  margin-bottom: 4em;
+  text-align: center;
+  color: var(--color-gray);
+  font-size: 0.875rem;
+}
+
+.control {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2em;
+}
+
+.control input {
+  padding: 0.5em;
+  outline: none;
+  border-radius: 0.3em;
+  border: 1px solid transparent;
+  box-shadow: 0 0 0.5em 0.1em var(--color-shadow);
+  color: var(--color-secondary);
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.control input::placeholder {
+  color: var(--color-secondary);
+}
+
+.control input:focus {
+  border-color: var(--color-secondary);
+  box-shadow: none;
+}
+
+.errorMsg {
+  margin-top: 0.5em;
+  color: var(--color-error);
+  font-size: 0.8rem;
+}
+
+.btnContainer {
+  text-align: center;
+  margin-top: 2em;
+}
+
+.btnContainer button {
+  all: unset;
+  font-size: 0.875rem;
+  background-color: var(--color-background);
+  color: var(--color-secondary);
+  padding: 0.5em 1em;
+  border-radius: 0.4em;
+  box-shadow: var(--box-shadow);
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+.btnContainer button:hover,
+.btnContainer button:active {
+  background-color: var(--color-secondary);
+  color: var(--color-white);
+}
+
+@media only screen and (min-width: 500px) {
+  .form {
+    width: 90%;
+    margin: 6em auto 3em;
+  }
+
+  .control input {
+    font-size: 0.9rem;
+  }
+
+  .errorMsg {
+    font-size: 0.85rem;
+  }
+
+  .btnContainer button {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .form {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .form {
+    width: 70%;
+  }
+
+  .form h2 {
+    font-size: 2.5rem;
+  }
+
+  .heading,
+  .control input {
+    font-size: 1rem;
+  }
+
+  .errorMsg {
+    font-size: 0.9rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .form {
+    width: 60%;
+    padding: 3em;
+  }
+
+  .form h2 {
+    font-size: 3rem;
+  }
+
+  .heading,
+  .control input {
+    font-size: 1.1rem;
+  }
+
+  .errorMsg {
+    font-size: 1rem;
+  }
+
+  .btnContainer button {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .form {
+    width: 70%;
+  }
+}

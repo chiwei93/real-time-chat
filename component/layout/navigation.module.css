@@ -1,0 +1,117 @@
+.nav {
+  padding: 1em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  text-decoration: none;
+  color: var(--color-black);
+  font-weight: bold;
+  font-family: 'Merriweather', serif;
+  font-size: 1.5rem;
+  display: inline-block;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.item:not(:last-child) {
+  margin-right: 1em;
+}
+
+.link {
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: bold;
+  display: inline-block;
+  font-family: 'Merriweather', serif;
+  cursor: pointer;
+  box-shadow: 0.1em 0.1em 0.5em var(--color-shadow);
+}
+
+.link.login,
+.link.signup,
+.link.logout {
+  padding: 0.8em 1.5em;
+  border-radius: 0.5em;
+  transition: color 0.3s, background-color 0.3s;
+  border: none;
+}
+
+.link.login,
+.link.logout {
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+}
+
+.link.signup {
+  color: var(--color-white);
+  background-color: var(--color-black);
+}
+
+.link.login:hover,
+.link.login:active,
+.link.logout:hover,
+.link.logout:active {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
+}
+
+.link.signup:hover,
+.link.signup:active {
+  background-color: var(--color-white);
+  color: var(--color-black);
+}
+
+@media only screen and (min-width: 500px) {
+  .nav {
+    padding: 1em 2em;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .nav {
+    padding: 1em 3em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .nav {
+    padding: 1em 4em;
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+
+  .item:not(:last-child) {
+    margin-right: 2em;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .nav {
+    padding: 1em 20vw;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .nav {
+    padding: 1em 25vw;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .nav {
+    padding: 1em 30vw;
+  }
+}

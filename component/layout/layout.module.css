@@ -1,0 +1,46 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.contentContainer {
+  flex: 1;
+  padding: 0 1em;
+}
+
+@media only screen and (min-width: 500px) {
+  .contentContainer {
+    padding: 0 2em;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .contentContainer {
+    padding: 0 3em;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .contentContainer {
+    padding: 0 4em;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .contentContainer {
+    padding: 0 20vw;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .contentContainer {
+    padding: 0 25vw;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .contentContainer {
+    padding: 0 30vw;
+  }
+}

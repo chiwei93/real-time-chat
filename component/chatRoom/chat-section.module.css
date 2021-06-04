@@ -1,0 +1,209 @@
+.container {
+  flex: 1;
+  background-color: var(--color-white);
+  padding: 2em 1.5em;
+  border-radius: 1em;
+}
+
+.header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--color-primary);
+  padding-bottom: 1em;
+}
+
+.chatInfo h4 {
+  font-size: 1.5rem;
+  margin-bottom: 0.5em;
+}
+
+.chatInfo p {
+  font-size: 0.8rem;
+}
+
+.btnClose {
+  text-decoration: none;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  padding: 0.4em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.1rem;
+  border-radius: 0.3em;
+  transition: color 0.3s, background-color 0.3s;
+  box-shadow: 0.1em 0.1em 0.5em var(--color-shadow);
+}
+
+.btnClose:hover,
+.btnClose:active {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+.chat {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-size: 0.875rem;
+  overflow-y: scroll;
+  max-height: 58vh;
+  min-height: 58vh;
+  margin-top: 0.5em;
+  padding: 0 0.5em;
+}
+
+.chat::-webkit-scrollbar {
+  display: none;
+}
+
+.chatItem {
+  background-color: var(--color-background);
+  align-self: flex-start;
+  width: 60%;
+  padding: 1em;
+  border-radius: 1em;
+  box-shadow: 0.1em 0.1em 0.5em var(--color-shadow);
+}
+
+.chatItem.me {
+  align-self: flex-end;
+}
+
+.chatItem:not(:last-child) {
+  margin-bottom: 1.5em;
+}
+
+.name {
+  margin-bottom: 0.5em;
+  font-weight: bold;
+}
+
+.form {
+  margin-top: 1em;
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+}
+
+.sendContainer button {
+  all: unset;
+  background-color: var(--color-primary);
+  color: var(--color-secondary);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.3em;
+  border-radius: 0.4em;
+  cursor: pointer;
+  transition: color 0.3s, background-color 0.3s;
+  font-size: 0.875rem;
+  box-shadow: 0.1em 0.1em 0.5em var(--color-shadow);
+}
+
+.sendContainer button:hover,
+.sendContainer button:active {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.inputContainer {
+  flex: 0.9;
+  position: relative;
+}
+
+.inputContainer textarea {
+  font-size: 0.875rem;
+  padding: 0.5em;
+  padding-right: 1.5em;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  border-radius: 0.3em;
+  resize: none;
+  color: var(--color-secondary);
+  border: 1px solid var(--color-primary);
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.inputContainer textarea::placeholder {
+  color: var(--color-secondary);
+}
+
+.inputContainer textarea:focus {
+  border-color: var(--color-secondary);
+}
+
+.sendContainer {
+  flex: 0.1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+@media only screen and (min-width: 500px) {
+  .sendContainer button {
+    font-size: 1rem;
+  }
+
+  .inputContainer button {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .container {
+    padding: 2em;
+  }
+
+  .chatItem {
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 3em;
+  }
+
+  .chatInfo h4 {
+    font-size: 2rem;
+  }
+
+  .chatInfo p {
+    font-size: 0.9rem;
+  }
+
+  .chat {
+    font-size: 1rem;
+  }
+
+  .form {
+    margin-top: 1.5em;
+  }
+
+  .sendContainer button {
+    font-size: 1.2rem;
+  }
+
+  .inputContainer textarea {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    flex: 0.7;
+  }
+
+  .inputContainer textarea {
+    font-size: 1.1rem;
+  }
+}

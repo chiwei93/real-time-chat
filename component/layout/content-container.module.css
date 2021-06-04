@@ -1,0 +1,21 @@
+.container {
+  margin: 1em 0 3em;
+  padding: 2em 1.5em;
+  background-color: var(--color-white);
+  border-radius: 1em;
+  min-height: 85vh;
+  display: flex;
+  flex-direction: column;
+}
+
+@media only screen and (min-width: 640px) {
+  .container {
+    padding: 2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    padding: 3em;
+  }
+}

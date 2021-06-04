@@ -1,0 +1,118 @@
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  width: 90vw;
+  background-color: var(--color-white);
+  padding: 3em 2em;
+  border-radius: 1em;
+}
+
+.btnClose,
+.btn {
+  all: unset;
+  cursor: pointer;
+  color: var(--color-secondary);
+  background-color: var(--color-primary);
+  display: inline-block;
+  border-radius: 0.5em;
+  box-shadow: 0.1em 0.1em 0.5em var(--color-shadow);
+  transition: color 0.3s, background-color 0.3s;
+  font-size: 0.875rem;
+}
+
+.btnClose {
+  padding: 0.5em;
+}
+
+.btnClose:hover,
+.btnClose:active,
+.btn:hover,
+.btn:active {
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+}
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal h3 {
+  text-align: center;
+  margin: 1.5em 0;
+}
+
+.btnContainer {
+  text-align: center;
+}
+
+.btn {
+  font-size: 0.875rem;
+  padding: 0.5em 1.5em;
+}
+
+.btn.marRight {
+  margin-right: 1em;
+}
+
+@media only screen and (min-width: 500px) {
+  .modal {
+    width: 80vw;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .modal {
+    width: 70vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .modal {
+    width: 60vw;
+  }
+
+  .modal h3 {
+    font-size: 1.5rem;
+  }
+
+  .btnClose,
+  .btn {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .modal {
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .modal {
+    width: 40vw;
+  }
+}
+
+@media only screen and (min-width: 1536px) {
+  .modal {
+    width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 2000px) {
+  .modal {
+    width: 25vw;
+  }
+}
