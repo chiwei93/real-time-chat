@@ -90,9 +90,6 @@ const AuthForm = ({ onSignup, isSignup, isLoading }) => {
         if (!result.error) {
           //navigate user to chats
           router.push('/chats');
-
-          //toast user
-          toastify(true, 'Logged in successfully!');
         } else {
           //if got errors, toast user of the error
           toastify(false, result.error);
